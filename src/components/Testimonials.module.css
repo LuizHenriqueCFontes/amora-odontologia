@@ -1,0 +1,134 @@
+.section {
+  padding: 83px 0 93px;
+  background: var(--color-paper);
+}
+
+.inner {
+  width: min(1200px, calc(100% - 64px));
+  margin: 0 auto;
+}
+
+.heading {
+  margin-bottom: 34px;
+  text-align: center;
+}
+
+.eyebrow {
+  margin: 0 0 11px;
+  color: #66869a;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+}
+
+.heading h2 {
+  max-width: 530px;
+  margin: 0 auto;
+  color: var(--color-ink);
+  font-family: var(--font-heading);
+  font-size: clamp(29px, 3.6vw, 40px);
+  font-weight: 600;
+  letter-spacing: -1.8px;
+  line-height: 1.2;
+}
+
+.heading > p:last-child {
+  margin: 12px 0 0;
+  color: var(--color-muted);
+  font-size: 14px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.card {
+  display: flex;
+  min-height: 226px;
+  flex-direction: column;
+  margin: 0;
+  padding: 25px 23px 21px;
+  border: 1px solid #e1e9ee;
+  border-radius: 4px;
+  background: var(--color-cream);
+}
+
+.stars {
+  display: flex;
+  gap: 3px;
+  color: #bd9853;
+}
+
+.stars svg {
+  width: 13px;
+  height: 13px;
+  fill: currentColor;
+  stroke-width: 0;
+}
+
+.card blockquote {
+  flex: 1;
+  margin: 17px 0 23px;
+  color: #526b7b;
+  font-size: 14px;
+  line-height: 1.75;
+}
+
+.card figcaption {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-top: 14px;
+  border-top: 1px solid var(--color-border);
+}
+
+.avatar {
+  display: grid;
+  width: 34px;
+  height: 34px;
+  place-items: center;
+  border-radius: 50%;
+  color: #426d84;
+  background: #e3eef4;
+  font-size: 9px;
+  font-weight: 700;
+}
+
+.person {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.person strong {
+  color: var(--color-ink);
+  font-size: 12px;
+}
+
+.person small {
+  color: #859189;
+  font-size: 11px;
+}
+
+@media (max-width: 760px) {
+  .inner {
+    width: calc(100% - 40px);
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    min-height: 190px;
+  }
+}
+
+@media (max-width: 500px) {
+  .section {
+    padding: 66px 0 72px;
+  }
+}
