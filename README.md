@@ -30,3 +30,8 @@ As imagens são carregadas do Unsplash e as fontes do Google Fonts. O formulári
 de contato valida os campos no navegador, mas é apenas demonstrativo: para
 receber agendamentos, conecte-o a um serviço de atendimento e atualize o conteúdo
 e os dados da clínica.
+
+ ---
+
+## Orientador
+Professor Hudson Neves
